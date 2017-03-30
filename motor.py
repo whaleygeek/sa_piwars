@@ -32,6 +32,7 @@ GPIO.setup(BACK_LEFT_F,   GPIO.OUT)
 GPIO.setup(FRONT_LEFT_B,  GPIO.OUT)
 GPIO.setup(FRONT_LEFT_F,  GPIO.OUT)
 
+
 def move_forward():
 	GPIO.output(BACK_RIGHT_B,  False)
 	GPIO.output(BACK_RIGHT_F,  True)
@@ -82,7 +83,7 @@ def stop():
 	GPIO.output(FRONT_LEFT_B,  False)
 	GPIO.output(FRONT_LEFT_F,  False)
 
-stop()
+#stop()
 
 try:
     while True:
